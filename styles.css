@@ -26,14 +26,13 @@ header h2 {
     height: 50px;
 }
 
-/* Stilizovanje slike */
+
 .logo {
     width: 100%;
     height: 100%;
     object-fit: cover;
     animation: moveLogo 3s infinite ease-in-out;
 }
-
 .forma {
     width: 100%;
     max-width: 600px;
@@ -45,8 +44,6 @@ header h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
 }
-
-/* Animacija koja pomera celu sliku */
 @keyframes moveLogo {
     0% {
         transform: translate(0, 0);
@@ -54,28 +51,23 @@ header h2 {
 
     25% {
         transform: translate(30px, 0);
-        /* Pomera udesno */
     }
 
     50% {
         transform: translate(30px, 30px);
-        /* Pomera udesno i dole */
     }
 
     75% {
         transform: translate(0, 30px);
-        /* Pomera levo */
     }
 
     100% {
         transform: translate(0, 0);
-        /* Vraća na početnu poziciju */
     }
 }
 
 .logo-container:hover {
     transform: scale(1.1);
-    /* Povećanje kontejnera kada korisnik pređe mišem Pseudo-klasa za hover efekat na slici */
 }
 
 .osiguraci {
